@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import './App.css';
-import Exercise1 from './components/Exercise1';
-import Exercise2 from './components/Exercise2';
+import React, { Component } from "react";
+import "./App.css";
+import Exercise1 from "./components/Exercise1";
+import Exercise2 from "./components/Exercise2";
+import InputTest from "./components/spotChecks";
 
 class App extends Component {
   constructor() {
@@ -11,18 +12,21 @@ class App extends Component {
   render() {
     return (
       <div>
-
-        <div className='ex-space'>
-          <h4 className='ex-title'>Exercise 1</h4 >
+        <div className="ex-space">
+          <h4 className="ex-title">Exercise 1</h4>
+          <InputTest />
+        </div>
+        <div className="ex-space">
+          <h4 className="ex-title">Exercise 1</h4>
           <Exercise1 />
         </div>
 
-        <div className='ex-space'>
-          <h4 className='ex-title'>Exercise 2</h4 >
+        <div className="ex-space">
+          <h4 className="ex-title">Exercise 2</h4>
           <Exercise2 />
         </div>
       </div>
-    )
+    );
   }
 }
 
